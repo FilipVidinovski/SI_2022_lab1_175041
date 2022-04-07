@@ -1,0 +1,177 @@
+1. Инсталирано Git, најден креиран GitHub профил од 2018.
+
+2. Променето името на главната гранка во master.
+
+3. Креиран remote репозиториум на Github наречен SI_2022_lab1_175041, наместен на приватно со избрана опцијата за README file. Едитиран README од страна на Github да содржи име, презиме и број на индекс.
+
+4. Клониран репоситориумот на личниот компјутер. Користени команди:
+	git console user.name "Filip Vidinovski"
+	git console user.email "filipvidin@gmail.com"
+	cd Desktop\Stvari\Факултет\Sovtverski Inzinering
+	git clone https://github.com/FilipVidinovski/SI_2022_lab1_175041.git
+	cd SI_2022_lab1_1475041
+
+5. Креирано shopping_list.txt, креирани 5 производи, додадено и комитнато со командите:
+	git add shopping_list.txt
+	git status
+	git commit -m "Add 5 items to the shopping list"
+
+6. Едитирано претходно креираниот документ, додаден и повторно комитнат со командите:
+	git add shopping_list.txt
+	git status
+	git commit -m "Add quantities to the items."
+
+7.Креирани 2 гранки, едната е именувана погрешно, по што е избришана и креирана со точното име, користени се командите:
+	git branch branch1
+	git branch branch2]
+	git branch
+	git branch -d branch2]
+	git branch branch2
+	git branch
+
+8. Команда користена:
+	git log
+Испечатено на екран:
+commit 7e55c3ea23ecf56c35840723aa42acf106dca95a (HEAD -> master, branch2, branch1)
+Author: Filip Vidinovski <filipvidin@gmail.com>
+Date: Thu Apr 7 14:51:33 2022 +0200
+
+	Add quantities to the items.
+
+commit 40786a33902c1fa76d8a58fcbe682679f7c97dc1
+Author: Filip Vidinovski <filipvidin@gmail.com>
+Date: Thu Apr 7 14:47:52 2022 +0200
+
+	Add 5 items to the shopping list
+
+commit 5c8cbab158727d6a890035f642048962785dfea3 (origin/master, origin/HEAD)
+Author: Filip Vidinovski <filipvidin@gmail.com>
+Date: Thu Apr 7 14:37:39 2022 +0200
+
+	Update README.md
+
+commit 12f52149c7e4e10bb17b98d407b296dcd88a4075
+Author: Filip Vidinovski <38265146+FilipVidinovski@users.noreply.github.com>
+Date: Thu Apr 7 10:41:05 2022 +0200
+
+	Initial commit
+
+9. Синхронизиран оддалечениот репозиториум со локалниот.
+
+10. Префрлено кон гранката "branch1" користејќи ја командата:
+	git checkout branch1
+
+11. Променета количината на петтата ставка во shopping_list.txt и направен комит, користени се командите:
+	git add shopping_list.txt
+	git commit -m "Change quantity of item #5"
+
+12. Користена е командата:
+	git checkout master
+
+13. Променета количината на втората ставка во shopping_list.txt и направен комит, користени се командите:
+	git add shopping_list.txt
+	git commit -m "Change quantity of item #2"
+
+14. Користена е командата:
+	git push
+
+15. Користена е командата:
+	git checkout branch2
+
+16. Променет називот на четвртата ставка во shopping_list.txt и направен комит, користени се командите:
+	git add shopping_list.txt
+	git commit -m "Modify item #4"
+
+17. Команда користена:
+	git log
+Испечатено на екран:
+commit c43a899dc7cb529cb1b067fd804e94b596856ac1 (HEAD -> branch2)
+Author: Filip Vidinovski <filipvidin@gmail.com>
+Date: Thu Apr 7 16:09:30 2022 +0200
+
+	Modify item #4
+
+commit 7e55c3ea23ecf56c35840723aa42acf106dca95a (HEAD -> master, branch2, branch1)
+Author: Filip Vidinovski <filipvidin@gmail.com>
+Date: Thu Apr 7 14:51:33 2022 +0200
+
+	Add quantities to the items.
+
+commit 40786a33902c1fa76d8a58fcbe682679f7c97dc1
+Author: Filip Vidinovski <filipvidin@gmail.com>
+Date: Thu Apr 7 14:47:52 2022 +0200
+
+	Add 5 items to the shopping list
+
+commit 5c8cbab158727d6a890035f642048962785dfea3 (origin/master, origin/HEAD)
+Author: Filip Vidinovski <filipvidin@gmail.com>
+Date: Thu Apr 7 14:37:39 2022 +0200
+
+	Update README.md
+
+commit 12f52149c7e4e10bb17b98d407b296dcd88a4075
+Author: Filip Vidinovski <38265146+FilipVidinovski@users.noreply.github.com>
+Date: Thu Apr 7 10:41:05 2022 +0200
+
+	Initial commit
+
+18. Додадена шестта ставка во shopping_list.txt и направен комит, користени се командите:
+	git add shopping_list.txt
+	git commit -m "Modify item #4 and add item #6"
+
+19. Команда користена:
+	git log
+Испечатено на екран:
+commit fe95f01cf2746e7dca06654f653c6b85fc6ce965 (HEAD -> branch2)
+Author: Filip Vidinovski <filipvidin@gmail.com>
+Date: Thu Apr 7 16:15:19 2022 +0200
+
+	Modify item #4 and add item #6
+
+
+commit c43a899dc7cb529cb1b067fd804e94b596856ac1
+Author: Filip Vidinovski <filipvidin@gmail.com>
+Date: Thu Apr 7 16:09:30 2022 +0200
+
+	Modify item #4
+
+commit 7e55c3ea23ecf56c35840723aa42acf106dca95a (HEAD -> master, branch2, branch1)
+Author: Filip Vidinovski <filipvidin@gmail.com>
+Date: Thu Apr 7 14:51:33 2022 +0200
+
+	Add quantities to the items.
+
+commit 40786a33902c1fa76d8a58fcbe682679f7c97dc1
+Author: Filip Vidinovski <filipvidin@gmail.com>
+Date: Thu Apr 7 14:47:52 2022 +0200
+
+	Add 5 items to the shopping list
+
+commit 5c8cbab158727d6a890035f642048962785dfea3 (origin/master, origin/HEAD)
+Author: Filip Vidinovski <filipvidin@gmail.com>
+Date: Thu Apr 7 14:37:39 2022 +0200
+
+	Update README.md
+
+commit 12f52149c7e4e10bb17b98d407b296dcd88a4075
+Author: Filip Vidinovski <38265146+FilipVidinovski@users.noreply.github.com>
+Date: Thu Apr 7 10:41:05 2022 +0200
+
+	Initial commit
+
+20. Користени команди: 
+	git checkout master
+	git merge branch1
+На екран испечатено:
+	Auto-merging shopping_list.txt
+	Merge made by the 'ort' strategy.
+
+21. Во branch2 настана конфликт, се реши со едитирање на shopping_list.txt, настана merge на branch2.
+
+Следниве чекори не се извршени во моментот на документирање, но може да се предвидат.
+22. Додадена дадотеката "175041.txt" во SI_2022_lab1_175041. За додавање во .git се користат командите:
+	git add 175041.txt
+	git commit -m "Added documentation file"
+
+23. Синхронизирани се гранките со оддалечениот репозиториум, користејки ја командата:
+	git push
