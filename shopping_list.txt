@@ -1,5 +1,5 @@
-Bread
-Eggs
-Milk
-Chicken Wings
-Mustard
+Bread x 2
+Eggs x 12
+Milk x 1 
+Chicken Wings x 2
+Mustard x 1
