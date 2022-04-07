@@ -3,3 +3,4 @@ Eggs x 15
 Milk x 1 
 Pork steak x 2
 Mustard x 2
+Chicken Wings x 2
